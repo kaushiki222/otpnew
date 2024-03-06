@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { RecoveryContext } from "../App";
+import "./Reset.css";
 
 export default function Reset() {
   const { setPage } = useContext(RecoveryContext);
@@ -9,28 +10,42 @@ export default function Reset() {
   }
   return (
     <>
-      <div>
-        <h2>change password</h2>
-      </div>
-      <div>
-        <label>New password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="......."
-          required=""
-        ></input>
-        <label>confirm password</label>
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="......."
-          required=""
-        ></input>
-        <a>term and condition</a>
-        <button onClick={() => changePassword()}>reset password</button>
+      <div className="password-reset-container ">
+        <div className="Form">
+          <div className="head">
+            <h2>Change Password</h2>
+          </div>
+          <div className="Password">
+            <div className="new">
+              <label>New password</label>
+              <input
+                className="button"
+                type="password"
+                name="password"
+                placeholder="Please enter password"
+                required=""
+              ></input>
+            </div>
+            <div className="confirm">
+              <label>Confirm password</label>
+              <input
+                className="button"
+                type="password"
+                name="password"
+                placeholder="Re-enter same password"
+                required=""
+              ></input>
+            </div>
+          </div>
+          <div className="Remembers">
+            <div className="Pass">
+              <a>Term and Condition</a>
+            </div>
+            <div className="Reset">
+              <button onClick={() => changePassword()}>Reset password</button>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

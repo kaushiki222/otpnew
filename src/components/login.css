@@ -13,6 +13,7 @@
 }
 .header {
   margin-bottom: 30px;
+  margin-left: 70px;
 }
 .title {
   color: #0047ab;
@@ -52,11 +53,12 @@
   outline: 1px ridge #0056b3;
   font-size: medium;
   margin-bottom: 10px;
+  margin-left: 90px;
 }
-button:hover {
+.buttons:hover {
   background-color: #0056b3;
 }
-button {
+.buttons {
   padding: 10px 20px;
   background-color: #0047ab;
   color: #fff;
@@ -67,6 +69,7 @@ button {
   width: 276px;
   height: 24px;
   margin-top: 20px;
+  margin-left: 90px;
 }
 
 .text {
@@ -75,19 +78,29 @@ button {
   gap: 20px;
   margin-bottom: 30px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-left: 120px;
 }
 
 .remember {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 100px;
-  width: 50vh;
-  height: 10vh;
+  width: 30vh;
+  height: 7vh;
+  margin-left: 135px;
 }
 
 .passwords:hover {
   color: #0056b3;
   cursor: pointer;
+}
+.Reset:hover {
+  color: #0056b3;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.Emails {
+  width: 40vh;
+  margin-left: 50px;
 }

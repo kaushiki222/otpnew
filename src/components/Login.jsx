@@ -25,8 +25,10 @@ export default function Login() {
         <div className="form">
           <div className="header">
             <h1 className="title">Forgot your password?</h1>
-            Please enter your Email address or phone number linked with your
-            account
+            <div className="Emails">
+              Please enter your Email address or phone number linked with your
+              account
+            </div>
           </div>
           <div className="sign-up">
             <form onSubmit={handleSubmit} className="Email">
@@ -39,7 +41,7 @@ export default function Login() {
                   placeholder="Email address or phone number"
                 />
               </label>
-              <button type="submit" className="code">
+              <button className="buttons" type="submit">
                 send code{" "}
               </button>
             </form>
@@ -49,7 +51,7 @@ export default function Login() {
             <div className="text">or</div>
             <div className="remember">
               <div className="password">Remember password? </div>
-              <div className="passwords">Login</div>
+              <div className="Reset">Login</div>
             </div>
           </div>
         </div>
