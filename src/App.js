@@ -26,5 +26,4 @@ function App() {
     </RecoveryContext.Provider>
   );
 }
-
 export default App;
